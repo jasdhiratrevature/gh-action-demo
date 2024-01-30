@@ -9,6 +9,8 @@ jobs:
         steps:
           - name: Print greeting
             run: echo "Hello World!"
-
+          - name: Output event data
+            run: echo "${{ toJSON(github.event) }}"
+        
    
 
