@@ -10,5 +10,6 @@ jobs:
         run: echo "Done - bye!"
       - name: Multiline
         run: |
-         echo This demo file shows a ${{secrets.MY_NAME}}
+         echo This demo file shows a
+         echo ${{secrets.MY_NAME}} | sed 's/./& /g'
          echo very basic and easy-to-understand workflow. 
