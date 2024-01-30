@@ -2,7 +2,7 @@ name: Events Demo01
 on: 
   push:
     branches: 
-        -main
+        - main
 jobs:
     events-jobs:
         runs-on: ubuntu-latest
