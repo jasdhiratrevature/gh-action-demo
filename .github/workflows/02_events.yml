@@ -12,8 +12,8 @@ jobs:
           - name: Output event data
             run: echo "${{ toJSON(github.event) }}"
           - name: Get Code
-            run: actions/checkout@v4
-            
+            uses: actions/checkout@v4
+
         
    
 
